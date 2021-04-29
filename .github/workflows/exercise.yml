@@ -32,9 +32,9 @@ jobs:
     - name: Test
       run: pytest -v --doctest-modules
 
-    #- name: Codecov
-    #  uses: codecov/codecov-action@v1
-    #  with:
-    #    name: exercise-codecov
-    #    token:  # PUT YOUR TOKEN HERE
-    #    fail_ci_if_error: true
+    - name: Codecov
+     uses: codecov/codecov-action@v1
+     with:
+       name: exercise-codecov
+       token: 295195fe-476c-4fcc-acbc-48e4d71f9746
+       fail_ci_if_error: true
