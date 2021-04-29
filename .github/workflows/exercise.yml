@@ -29,8 +29,8 @@ jobs:
     - name: Install
       run: pip install .
     
-    #- name: Test
-    #  run: #ADD pytest commands here
+    - name: Test
+      run: pytest -v --doctest-modules
 
     #- name: Codecov
     #  uses: codecov/codecov-action@v1
